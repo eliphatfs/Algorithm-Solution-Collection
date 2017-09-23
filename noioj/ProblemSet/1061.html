@@ -1,0 +1,63 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1061. Wifi密码 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1061" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">使用Wifi上网时，通常需要输入正确的密码之后，才能登录。假设输入密码没有次数限制（密码通常为八个字符，假设预置密码为NOIP@CCF）。<br />
+请你编写一个程序，模拟使用Wifi上网的登录过程：用户尝试输入密码，直到自己要求结束或者密码正确。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">输入包含若干行尝试登录信息，每一次尝试对应两行或一行输入：<br />
+第一行，一个字符&quot;Y&quot;或&quot;N &quot;，表示是否继续登录<br />
+第一行为&quot;Y&quot;时，则还需要输入第二行，八位字符，表示要尝试的密码</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">输出仅一行：密码是否正确的提示信息&quot;Success&quot;或&quot;Sorry&quot;</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>输入1：
+Y
+cctv@CCF
+Y
+NOIP@CCF
+输入2：
+Y
+cctv@CCF
+N</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>输出1：
+Sorry
+Success
+输出2：
+Sorry</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content"></div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

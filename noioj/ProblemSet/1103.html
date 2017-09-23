@@ -1,0 +1,63 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1103. 字符串操作 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1103" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">给出n(n&lt;=1,000)个字符串，每个字符串的长度不超过100，都是由小写字母构成。现在给你三种询问<br />
+(1)询问&ldquo;0&rdquo;需要你某个区间内求出最长的字符串；<br />
+(2)询问&ldquo;1&rdquo;需要你求出某个区间内字典序最大的字符串；<br />
+(3)询问&ldquo;2&rdquo;需要你求出某个区间内出现某个关键字母最多的字符串。如果有多个并列最大的情况，则输出最先输入的字符串。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行为一个整数n与一个字符，分别表示字符串的数量和关键字符<br />
+接下来n行，每行读入一个字符串<br />
+接下来一行为一个整数q(q&lt;=100)，表示询问次数。<br />
+接下来q行每行3个整数L,R,sig，分别表示询问区间为L~R和询问的类型。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">共q行，第i行为第i个询问的答案。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>3 a
+abc
+aaaa
+aba
+3
+1 3 0
+1 2 1
+2 3 2</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>aaaa
+abc
+aaaa</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">n&lt;=1,000</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

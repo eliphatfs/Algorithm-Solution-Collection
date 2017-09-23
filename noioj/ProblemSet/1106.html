@@ -1,0 +1,73 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1106. 蚯蚓 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1106" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">有一天lzz和hxy去看蚯蚓。突然他们看到了一条巨蚯蚓。他们被稀有的巨蚯蚓吸引了。巨蚯蚓有很多的性质，它可以随意分裂和连接。而且巨蚯蚓身上每一节都有一个数字。lzz和hxy一共看了m个时刻才离去。每个时刻都会发生一个事件。现在，lzz自豪地告诉你巨蚯蚓的长度和形态，以及m个时刻内这m个事件的先后顺序，你要对应每一次lzz的询问，回答他的问题。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行输入两个整数n,m，分别表示巨蚯蚓的长度和过去的时间。<br />
+第二行输入n个整数，表示从后往前输入巨蚯蚓的每一节上的数。<br />
+后面m行，每行1~3个整数。其中第一个整数设为a。<br />
+当a=0时，这一行还有两个整数b,c，表示lzz往后数了b条蚯蚓，hxy往后数了c条蚯蚓。<br />
+当a=1时，这一行还有一个整数b，表示lzz将他面前那条蚯蚓切成两段，而且前面那一段长度为b，若这条蚯蚓的长度不足b（&lt;=b），则输出&ldquo;error!&rdquo;否则就将蚯蚓分成两段，前面那一段（长为b）放在当前这个位置，剩下那一段插到当前位置的下一个位置。然后lzz会站到下一个位置去。<br />
+当a=2时，这一行还有一个整数b，表示lzz将他面前那条蚯蚓切成两段，前面那段长为b，如果这条蚯蚓长度不足b（&lt;=b），则不切。然后将hxy面前的蚯蚓放到lzz切开的两条蚯蚓之间（若长度不足b无法切则放到lzz面前的蚯蚓后面），然后这三条（两条）蚯蚓会连在一起，这时hxy走到lzz所在位置。如果lzz和hxy站在一起，那么输出&ldquo;error!&rdquo;然后跳过这一次操作。<br />
+当a=3时，lzz和hxy交换他们的位置。<br />
+当a=4时，hxy面前的蚯蚓将它的头断掉，然后连到它的尾部。<br />
+当a=5时，表示lzz询问你他面前的蚯蚓身上的数字。你需要输出一行数字，依次表示lzz面前的蚯蚓身上的数字。<br />
+(1&lt;=n,m&lt;=20000)<br />
+&nbsp;<br />
+注：一开始只有一条蚯蚓，lzz和hxy都站在它的面前。但是即使如此也可以往后数的（可以认为是蚯蚓们都站成一个圈，一定能往后数）。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">对于每一个a=1或a=2的操作，无法操作的输出一行&quot;error!&quot;<br />
+对于每一个a=5，从头到尾依次输出lzz面前蚯蚓身上的数字。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>10 10
+10 9 8 7 6 5 4 3 2 1
+5
+1 1
+0 0 2
+0 6 7
+5
+0 6 3
+0 2 4
+1 3
+1 5
+5</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>1 2 3 4 5 6 7 8 9 10
+2 3 4 5 6 7 8 9 10
+10</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content"></div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

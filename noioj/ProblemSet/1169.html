@@ -1,0 +1,59 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1169. 计算器 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1169" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">我们需要模拟计算器实现对一个数开根或求其三角函数以及反三角函数的值的操作。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">读入n，表示有n个操作，接下来每一行有两个数：k,x，其中k表示操作类型，具体如下：<br />
+若k=1，则表示询问x的平方根；<br />
+若k=2，则表示询问度数为x的正弦值、余弦值以及正切值；<br />
+若k=3，则表示询问x的反正弦函数值和反余弦函数值；<br />
+若k=4，则表示询问x的反正切函数值。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">对于每个操作，输出对应的结果，所有结果均保留三位小数输出。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>4
+1 9
+2 30
+3 -0.5
+4 1</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>3.000
+0.500 0.866 0.577
+-0.524 2.094
+0.785</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">n&lt;=100</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

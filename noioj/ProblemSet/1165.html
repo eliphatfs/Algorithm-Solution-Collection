@@ -1,0 +1,56 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1165. 射命丸文 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1165" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">在幻想乡，射命丸文是以偷拍闻名的鸦天狗。当然，文文的照相机可不止能够照相，还能够消除取景框里面所有的弹幕。假设现在文文面前有一块N行M列的弹幕群，每一个单位面积内有分值有num[i][j]的弹幕。相机的取景框可以将一块R行C列的弹幕消除，并且得到这一块区域内所有弹幕的分值(累加)。现在文文想要取得尽可能多的分值，请你计算出她最多能够得到的分值。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第1行：4个正整数N,M,R,C<br />
+第2..N+1行：每行M个正整数，第i+1行第j个数表示num[i][j]</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">第1行：1个整数，表示文文能够取得的最大得分</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>3 5 2 3
+5 2 7 1 1
+5 9 5 1 5
+3 5 1 5 3</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>33</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">对于60%的数据：1 &lt;= N,M &lt;= 200<br />
+对于100%的数据：1 &lt;= N,M &lt;= 1,000<br />
+1 &lt;= R &lt;= N, 1 &lt;= C &lt;= M<br />
+1 &lt;= num[i][j] &lt;= 1000<br />
+保证结果不超过2,000,000,000</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

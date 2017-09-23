@@ -1,0 +1,52 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1074. 2的幂次方表示 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1074" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">任何一个正整数都可以用2的幂次方表示。例如：137=27+23+20。同时约定方次用括号来表示，即ab可表示为a(b)。由此可知，137可表示为：2(7)+2(3)+2(0)。<br />
+进一步：7=22+2+20（21用2表示），3=2+20<br />
+&nbsp;&nbsp;&nbsp; 所以最后137可表示为：2(2(2)+2+2(0))+2(2+2(0))+2(0)<br />
+&nbsp;&nbsp;&nbsp; 又如：1315=210+28+25+2+1<br />
+&nbsp;&nbsp;&nbsp; 所以1315最后可表示为：2(2(2+2(0))+2)+2(2(2+2(0)))+2(2(2)+2(0))+2+2(0)</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">一个正整数n（n&lt;=20000）。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">一行，符合约定的n的2的幂次方表示（在表示中不能有空格）。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>137</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>2(2(2)+2+2(0))+2(2+2(0))+2(0)</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">n&lt;=20000</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

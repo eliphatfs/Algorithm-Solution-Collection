@@ -1,0 +1,50 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1052. Self-Numbers <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1052" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">在1949年印度数学家D. R. Daprekar发现了一类称作Self-Numbers的数。对于每一个正整数n，我们定义d(n)为n加上它每一位数字的和。例如，d(75)=75+7+5=87。给定任意正整数n作为一个起点，都能构造出一个无限递增的序列：n, d(n), d(d(n)), d(d(d(n))), . . . 例如，如果你从33开始，下一个数是33+3+3=39，再下一个为39+3+9=51，再再下一个为51+5+1=57，因此你所产生的序列就像这样：33, 39, 51, 57, 69, 84, 96, 111, 114, 120, 123, 129, 141, . . . 数字n被称作d(n)的发生器。在上面的这个序列中，33是39的发生器，39是51的发生器，51是57的发生器等等。有一些数有超过一个发生器，如101的发生器可以使91和100。一个没有发生器的数被称作Self-Number。如前13个Self-Number为1, 3, 5, 7, 9, 20, 31, 42, 53, 64, 75, 86, 97。我们将第i个Self-Number表示为a[i]，所以a[1]=1, a[2]=3, a[3]=5. . .&nbsp;</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">输入包含整数N、K、s1. . . sk，其中1&lt;=N&lt;=10^7，1&lt;=K&lt;=5000，以空格和换行分割。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">在第一行你需要输出一个数，这个数表示在闭区间[1, N]中Self-Number的数量。第二行必须包含以空格划分的K个数，表示a[s1]. . a[sk]，这里保证所有的a[s1]. . a[sk]都小于N。（例如，如果N=100，sk可以为1-13，但不能为14，因为a[14]=108&gt;100）&nbsp;</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>100 10
+1 2 3 4 5 6 7 11 12 13&nbsp;</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>13
+1 3 5 7 9 20 31 75 86 97</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">1&lt;=N&lt;=10^7，1&lt;=K&lt;=5000</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

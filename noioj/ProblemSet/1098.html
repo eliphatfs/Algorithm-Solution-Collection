@@ -1,0 +1,63 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1098. 森林 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1098" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">在很久很久之前，有一个很大很大的森林。森林里共有n棵奇怪的大树，每棵奇怪的大树上有一道数学式子，只有回答正确的运算答案才能开启到下一棵树的道路。<br />
+斌斌在森林里玩了一天很开心，可在傍晚回家的时候，他被这些复杂的计算难倒了，你能帮帮他吗？斌斌一开始在第一棵树，他解答完n道题就可以走出森林了。<br />
+式子的形式以&ldquo;a (+-/*) b(+-/*) c(+-/*) d&hellip;&hellip;=&rdquo;的形式给出，严格按照从左到右的顺序计算即可（即乘除与加减同优先级），最后以最简分数的形式输出答案（a/b）<br />
+（即a与b的最大公因数是1）</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第1行为n。<br />
+第2-n+1行，每行有一个字符串si，表示第i个题目。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">n行，每行一个分数（a/b）的形式</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>2
+5+6/7*3/9=
+2+10/5-1=</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>11/21
+7/5</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">n&lt;=500，si长度之和&lt;=10000 保证答案分子分母&lt;=10^9<br />
+a,b,c,d&lt;=1</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+							<div class="well"><fieldset>
+					<legend><h4>提示</h4></legend>
+					<div class="content">关于输出格式问题：<br />
+答案为0输出0<br />
+答案为﹣输出-a/b的形式<br />
+答案为+ 输出a/b的形式</div>
+				</fieldset></div>
+			
+			<div style="text-align:center">
+									<p>

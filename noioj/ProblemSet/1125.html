@@ -1,0 +1,58 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1125. 一元多项式相乘 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1125" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">一元n次多项式可用如下的表达式表示：f(x)= anx^n+an-1x^n-1+...+a1x+a0,an&ne;0<br />
+其中，aixi称为i次项，ai称为i次项的系数。给出两个关于x的一元多项式的次数和系数，请输出这两个多项式的乘积。输出要求如下：<br />
+①多项式中自变量为x，从左到右按照次数递减顺序给出多项式。<br />
+②多项式中只包含系数不为0的项。<br />
+③如果多项式最高次项系数为正，则多项式开头不出现&ldquo;+&rdquo;号，如果为负，则多项式以&ldquo;-&rdquo;号开头。<br />
+④对于不是最高次的项，以&ldquo;+&rdquo;号或者&ldquo;-&rdquo;号连接此项与此前一项，分别表示此项系数为正或者系数为负。紧跟一个正整数，表示此项系数的绝对值(对于一个高于0次的项，其系数的绝对值为1，则无需输出1)。如果x的指数大于1，则接下来紧跟着的指数部分的形式为&ldquo;x^b&rdquo;，其中b为x的指数；如果x的指数为1，则接下来紧跟的指数部分形式为&ldquo;x&rdquo;；如果x的指数为0，则仅需输出系数即可。<br />
+⑤多项式中，多项式的开头、结尾不含多余的空格。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">每个多项式用两行来表示。<br />
+第一行1个整数n，表示一元多项式中非零系数项的个数。第二行有2*n个整数，按照次数从大到小描述非零系数的系数和次数，两个数一对，每两个整数之间用空格隔开。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">按题目要求输出两个多项式的乘积。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>5
+100 5 -1 4 1 3 -3 2 10 0
+2
+-50 3 1 0</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>-5000x^8+50x^7-50x^6+250x^5-x^4-499x^3-3x^2+10</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">n&lt;=100,输入的多项式最高次项和系数项的绝对值不超过10^8</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

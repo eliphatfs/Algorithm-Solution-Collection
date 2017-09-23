@@ -1,0 +1,61 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1086. 字符处理 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1086" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">现在有一个英语文段，这个文段中仅包含大小写字母以及&ldquo; &rdquo;&ldquo;,&rdquo;&ldquo;.&rdquo;&ldquo;!&rdquo;&ldquo;?&rdquo;&ldquo;;&rdquo;6个字符。由于一些错误，这个文段缺少格式，希望你进行恰当整理并帮忙划分出语段中的句子。<br />
+规则如下：<br />
+&nbsp; &nbsp; &nbsp;1、对于&ldquo;;&rdquo;&ldquo;,&rdquo;不做任何操作。<br />
+&nbsp; &nbsp; &nbsp;2、&ldquo;.&rdquo;&ldquo;!&rdquo;&ldquo;?&rdquo;表示一句话的结束，每句话的结束处应进行换行。<br />
+&nbsp; &nbsp; &nbsp;3、每一句话的开始处应含有两个空格。<br />
+&nbsp; &nbsp; &nbsp;4、文段开头、句与句之间可能存在一些空格，请忽略。<br />
+需要特别注意的是，每一行的符号总数不能超过50个，符号包括大小写字母、上述的6个字符以及每句话前的两个空格。超出部分应从新的一行的第一个字符开始写起。<br />
+现给出一个英语文段，请写一个程序，完成如上操作，并统计出该英语文段中共包含多少个句子。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">仅一行，一个字符串。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">第1行，一个整数n，为英语文段中句子的个数。<br />
+余下行按题目要求输出。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>Time is like a river, the left bank is unable to forget the memories, right is worth grasp the youth, the middle of the fast flowing, is the sad young faint. There are many good things, buttruly belong to own but not much. See the courthouse blossom,honor or disgrace not Jing, hope heaven Yunjuanyunshu, has no intention to stay. In this round the world, all can learn to use a normal heart to treat all around, is also a kind of realm!</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>4
+&nbsp; Time is like a river, the left bank is unable to forget the memories, right is worth grasp the youth, the middle of the fast flowing, is the sad young faint.
+&nbsp; There are many good things, buttruly belong to o
+wn but not much.
+&nbsp; See the courthouse blossom,honor or disgrace not &nbsp;Jing, hope heaven Yunjuanyunshu, has no intention to stay.
+&nbsp; In this round the world, all can learn to use a normal heart to treat all around, is also a kind of realm!</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">&nbsp;1 &lt;= 字符串的长度 &lt;= 100000</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

@@ -1,0 +1,50 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1182. 凸多边形划分 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1182" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">在一个凸n边形中，通过不相交于n边形内部的对角线，把n边形拆分成若干三角形，问有多少种拆分方案。<br />
+例如五边形有如下五种拆分方案。<br />
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAACACAIAAADWGrRtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABT2SURBVHhe7Z09yGY1E4a3lGXlE7bQYlnFYtFOUBcRURvB0k6xshEsLS0EwQXttBJLS8HG0sLCUrCxtLS0tLTUm28ghJycZDKZ/DzPe7+FqORnck3Onckk5zy3/uUfCZAACZDAOgK31nXNnkmABEiABP6lCnMSkAAJkMBKAlThlfTZNwmQAAlQhTkHSIAESGAlAarwSvrsmwRIgASowpwDJEACJLCSAFV4JX32TQIkQAJUYc4BEiABElhJgCq8kj77JgESIAGqMOcACZAACawkQBVeSZ99kwAJkABVmHOABEiABFYSoAqvpM++SYAESIAqzDlAAiRAAisJUIVX0mffJEACJEAV5hwgARIggZUEqMIr6bNvEiABEqAKcw6QAAmQwEoCVOGV9Nk3CZAACVCFOQdIgARIYCUBqvBK+uybBEiABK5Hhb///vuvv/76pnn0559/vnfv3nfffXfTBi7j/euvv+D3mzl2jPqXX375/fffb8Lwr9vR16DC//zzzwcffPDee+99/PHHb7/99t9//30T5iXG+OWXX7755pt379599913QeDmDFz8+9NPPz377LO3b9+G62/a2DH8Tz75BN5/5ZVXrj74gKOffvrp+/fvX6ujL16Ff/311xdeeCEEg3DYc889h39etxAjNMATiOcQK9BHH3307bffggA4gMZ1D1xGh1HLivvVV189+eSTn3/++c0ZO4b/559/QnyxBscornIdCo6GuzFe7Huu0tGXrcISDP7xxx+x9ECh8HyKQl2lJMlKg92ojA7/AgjJw3mVA5dBwd0hAMTAP/zwQ/hahOmzzz674oHL0LLLbTIlrgMCHA3NlUj/mWeegYvDJL8yR1+qClelNivQlz47Q2iQBD5PPfUUgMjoZKMa/vPSh5zYLxokyVCMEQPHw4lHVIrh4YQWX+vY4XTknc5ST/H26Aqcju0dHC0BFnZ4cGs8qCtz9EWqMFZ+eKiadhDnXc3JVRwDJo+ZJCXC/0R0fH1pGWjQO++8Aw0KWxwMGQPHqDHYsB+C0/GfP/744xUoUTwE5WS+guBDHA3PBkdDc4/B7zU5+sJUOASDynhH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" alt=" " /></div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行输入一个整数n(3&lt;=n&lt;=32)。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">输出一个数表示划分方案的总数。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>5</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>5</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">3&lt;=n&lt;=32</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

@@ -1,0 +1,60 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1068. 图像旋转翻转变换 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1068" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">给定m行n列的图像各像素点灰度值，对其依次进行一系列操作后，求最终图像。<br />
+其中，可能的操作有如下四种：<br />
+A：顺时针旋转90度；<br />
+B：逆时针旋转90度；<br />
+C：左右翻转；<br />
+D：上下翻转。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行包含两个正整数m和n，表示图像的行数和列数，中间用单个空格隔开。1 &lt;= m &lt;= 100, 1 &lt;= n &lt;= 100。<br />
+&nbsp;&nbsp;&nbsp; 接下来m行，每行n个整数，表示图像中每个像素点的灰度值，相邻两个数之间用单个空格隔开。灰度值范围在0到255之间。<br />
+&nbsp;&nbsp;&nbsp; 接下来一行，包含由A、B、C、D组成的字符串s，表示需要按顺序执行的操作序列。s的长度在1到100之间。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">m'行，每行包含n'个整数，为最终图像各像素点的灰度值。其中m'为最终图像的行数，n'为最终图像的列数。相邻两个整数之间用单个空格隔开。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>2 3
+10 0 10
+100 100 10
+AC</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>10 100
+0 100
+10 10</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">1 &lt;= m &lt;= 100, 1 &lt;= n &lt;= 100。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

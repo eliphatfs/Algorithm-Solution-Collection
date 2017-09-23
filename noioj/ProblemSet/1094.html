@@ -1,0 +1,76 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1094. 奇妙数 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1094" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">有一个数学家Jason定义了一种奇妙数(strange)，它的四则运算和普通的数有很大区别。<br />
+但是在某种意义下，奇妙数和普通的整数是可以互相转化的。<br />
+设有奇妙数A和B，对应的整数是a和b。<br />
+则有：<br />
+A+B=a*b+b*a<br />
+A-B=a+b+a*b<br />
+A*B=b*b+a*a<br />
+A/B=b-a+b*a<br />
+&nbsp;现在有一个奇妙数A，一开始它相当于普通的整数0。<br />
+对它做n个操作，问每次操作后它相当于哪个整数？<br />
+每次操作形如A=A+B,A=A-B,A=A*B,A=A/B。<br />
+&nbsp;为了防止超过int的范围，Jason继续定义奇妙数和整数的取余操作：<br />
+A%k=a%k<br />
+每次操作后，都让A%12345，再输出。<br />
+&nbsp;请帮Jason解决这个问题。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第1行：一个整数n&nbsp; (1&lt;=n&lt;=100)。<br />
+第2~n+1行：每行首先有一个字符 +或-或*或/ 表示要做的操作，然后是一个正整数b，表示奇妙数B对应的正整数（1&lt;=b&lt;=1000）。<br />
+要做的事是：<br />
+计算A与B运算后的奇妙数C，输出对应的整数，然后用C代替A，继续下一个操作。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">一行一个整数，表示奇妙数A每次操作后对应的整数。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>6
++ 3
+- 2
+* 4
+/ 3
+* 5
+- 1000</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>0
+2
+20
+43
+1874
+434</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">1&lt;=n&lt;=100</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

@@ -1,0 +1,61 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1164. 牛的零食 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1164" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">FJ经常给产奶量高的奶牛发特殊津贴，于是很快奶牛们拥有了大笔不知该怎么花的钱。为此，FJ购置了N(1&lt;=N&lt;=2000)份美味的零食来卖给奶牛们。每天FJ售出一份零食。当然FJ希望这些零食全部售出后能得到最大的收益。<br />
+&nbsp;&nbsp;&nbsp; 这些零食有以下这些有趣的特性：<br />
+&nbsp; * 零食按照1..N编号，它们被排成一列放在一个很长的盒子里。盒子的两端都有开口，FJ每天可以从盒子的任一端取出最外面的一个。<br />
+&nbsp;&nbsp; * 与美酒和好吃的奶酪相似，这些零食储存得越久就越好吃。当然，这样FJ就可以把它们卖出更高的价钱。<br />
+&nbsp;&nbsp; * 每份零食的初始价值不一定相同。FJ进货时，第i份零食的初始价值为v(i) (1&lt;=v(i)&lt;=1000)。<br />
+&nbsp;&nbsp; * 第i份零食如果在被买进后的第a天出售，则它的售价是v(i)*a。<br />
+&nbsp;&nbsp;&nbsp; v(i)对应的是从盒子顶端往下的第i份零食的初始价值。FJ告诉了你所有零食的初始价值，并希望你能帮他计算一下，在这些零食全被卖出后，他最多能得到多少钱。<br />
+&nbsp;&nbsp;&nbsp; 第一份零食在买进后的第1天售出，也就是说此时a=1。以后每过一天，a的值就增加1。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第1行: 一个整数N，表示零食的总数<br />
+第2..N+1行: 第i+1行给出了从盒子顶端往下的第i份零食的初始价值v(i)</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">第1行: 输出一个整数，即FJ在卖完所有零食后的最大可能收益</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>5
+1
+3
+1
+5
+2</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>43</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">FJ一共进了5份零食。第1天FJ可以选择出售第1份初始价值为1的零食，或是第5份初始价值为2的零食。FJ按照以下的顺序出售零食：1,5,2,3,4，这样他的总收入就是1*1+2*2+3*3+4*1+5*5=43。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

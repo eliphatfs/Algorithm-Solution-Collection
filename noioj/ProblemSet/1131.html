@@ -1,0 +1,59 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1131. 士兵排队 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1131" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">Daniel 正在玩一个战棋游戏。<br />
+现在Daniel 有n 队士兵站在x 轴上。第i 队士兵有ai 人，坐标为xi。<br />
+Daniel 看到一队士兵有这么多人，都站在同一个位置，他对此很不满意。他想命令一些士兵移动到新的位置（必须是整点），使得不存在两个士兵站在同一个位置。<br />
+为了节约时间，Daniel 希望每个士兵的移动距离的最大值尽可能小。请求出这个最小值。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行一个正整数n，表示Daniel 有多少队士兵。<br />
+第二行n 个正整数ai，表示每队士兵的人数。<br />
+第三行n 个严格递增的整数xi，表示每队士兵的坐标。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">一行一个非负整数，表示每个士兵的移动距离的最大值的最小值。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>2
+2 3
+0 2</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>1</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">1&lt;=n&lt;=100,000，坐标在int范围内。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+							<div class="well"><fieldset>
+					<legend><h4>提示</h4></legend>
+					<div class="content">移动后，5 个士兵的坐标分别为??1,0,1, 2, 3。有2 个士兵移动距离为0，3 个士兵移动距离为1，因此答案是1。</div>
+				</fieldset></div>
+			
+			<div style="text-align:center">
+									<p>

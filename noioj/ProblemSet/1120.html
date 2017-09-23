@@ -1,0 +1,58 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1120. 找火车 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">10000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1120" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">现在有一列有N个车厢的火车正在铁路上行驶。一开始给定Next_i，表示i号车厢的下一个车厢为Next_i号车厢，假如Next_i=0，表示这是最后一个车厢。现在有Q个操作，操作分为两类，一种是将某号车厢移除，那么原来在他前面的车厢将和他后面的车厢相连，另一种是询问从某号车厢开始往后第C个车厢是哪号，假如不存在则输出-1。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行两个整数N,Q。<br />
+第二行N个整数,第i个整数表示Next_i。<br />
+接下来Q行，每行为0 i或1 i C的形式，若为0 i，表示要将i号车厢移除，若为1 i C，表示要询问i号车厢往后第C个车厢的号码。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">对于每个询问操作，输出一行，表示对应的车厢号，若不存在输出-1。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>6 4
+6 3 1 0 4 5
+1 5 2
+1 5 1
+0 6
+1 2 3</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>-1
+4
+5</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">N,Q &lt;= 100000<br />
+询问的C之和不超过5000000</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

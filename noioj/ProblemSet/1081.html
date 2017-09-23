@@ -1,0 +1,63 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1081. 同构字符串 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1081" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">给定一个字符串T，它的长度是LT，那么字符串T可以用字符数组T[1..LT]来表示。你可以把T的任意两个字符交换位置，你可以交换任意多次。经过交换之后的字符串被称为T的同构串。例如：<br />
+T=&ldquo;abac&rdquo; 那么 &ldquo;aabc&rdquo;、 &nbsp;&ldquo;aacb&rdquo;、 &ldquo;baac&rdquo;、 &ldquo;baca&rdquo;、 &ldquo;bcaa&rdquo;、 &ldquo;caab&rdquo;、 &ldquo;caba&rdquo;、 &ldquo;cbaa&rdquo;等都是字符串T的同构串。而&ldquo;baab&rdquo;、 &ldquo;bcab&rdquo;等都不是字符串T的同构串。<br />
+再给定一个字符串S，长度是 LS，那么字符串S可以用字符数组S[1..LS]来表示。<br />
+初始时，ans = 0 。 对于每一个下标K，其中1 &lt;= K &lt;= LS &ndash; LT + 1,&nbsp; 那么S[K&hellip;K+LT-1]是S的一个子串， 如果该子串S[K&hellip;K+LT-1]是字符串T的同构串，那么ans增加1。你的任务就是输出ans最后的值。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行，一个字符串T。长度不超过10000，T的每个字符要么是小写字母要么是大写字母。<br />
+&nbsp;第二行，一个字符串S。长度是5000000，S的每个字符要么是小写字母要么是大写字母。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">一个整数，ans最后的值。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>aba
+baababac</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>4</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">对于40%的数据，T 的长度不超过100，且S的长度不超过10000。<br />
+对于70%的数据，S的长度不超过1000000。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+							<div class="well"><fieldset>
+					<legend><h4>提示</h4></legend>
+					<div class="content">当K=1时，S[1..3] = &ldquo;baa&rdquo;，是T的同构串。<br />
+当K=2时，S[2..4] = &ldquo;aab&rdquo;，是T的同构串。<br />
+当K=3时，S[3..5] = &ldquo;aba&rdquo;，是T的同构串。<br />
+当K=4时，S[4..6] = &ldquo;bab&rdquo;，不是T的同构串。<br />
+当K=5时，S[5..7] = &ldquo;aba&rdquo;，是T的同构串。<br />
+当K=6时，S[6..8] = &ldquo;bac&rdquo;，不是T的同构串。</div>
+				</fieldset></div>
+			
+			<div style="text-align:center">
+									<p>

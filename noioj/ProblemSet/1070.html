@@ -1,0 +1,60 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1070. 汉诺塔游戏 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">3000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1070" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">汉诺塔由编号为1到n大小不同的圆盘和三根柱子a,b,c组成，编号越小盘子越小。开始时，这n个圆盘由大到小依次套在a柱上，如图1.6.3所示。要求把a柱上n个圆盘按下述规则移到c柱上：<br />
+①一次只能移一个圆盘，它必须位于某个柱子的顶部；<br />
+②圆盘只能在三个柱子上存放；<br />
+③任何时刻不允许大盘压小盘。<br />
+将这n个盘子用最少移动次数从a柱移动到c柱上，输出每一步的移动方法。<br />
+<img src="data:image/png;base64,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" alt=" " /><br />
+&nbsp;</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">只有一行，一个整数n(1&lt;=n&lt;=20),表示盘子的数量。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">输出若干行，每一行的格式是&ldquo;步数.Move 盘子编号 from 源柱 to 目标柱&rdquo;。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>3</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>1.Move 1 from a to c
+2.Move 2 from a to b
+3.Move 1 from c to b
+4.Move 3 from a to c
+5.Move 1 from b to a
+6.Move 2 from b to c
+7.Move 1 from a to c</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">1&lt;=n&lt;=20</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

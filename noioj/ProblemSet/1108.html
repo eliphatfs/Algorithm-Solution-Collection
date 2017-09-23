@@ -1,0 +1,57 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1108. 生日游戏 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1108" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">明天是lzz的生日，他想设计一个游戏。他家有一个房间，房间是一个n*m的矩形，里面铺满了1*1的地砖，每个地砖上都有一个数字。<br />
+他知道hxy很喜欢螺旋形，他想：假如我们按照顺时针螺旋形依次走过每一块地砖，那一定很有趣，但是lzz讨厌重复，所以他不愿意经过同一块砖块第二次。注意，砖块上的数字可能会重复，但是数字相同但是他家这个矩形房间很大，他忘了这个房间的长和宽n与m到底是多少，他只记得地砖的总数量不超过1000000，等他回到家之后会将地砖的照片发给你。现在请你写一个程序，帮他解决这个问题。&nbsp;<br />
+注：lzz总是会从第一行第一块砖出发，他初始的朝向是向右。当他走到一块砖上，使得他下一步不能向前走（也就是当他继续向前走会走到某一块已经走过的地砖上或者是继续向前走会撞到墙）时，他就会向右转向。注意，当他面朝右边时，他右转之后会面朝下方，以此类推。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行两个整数n，m，分别表示房间的长和宽。<br />
+下面有n行，每行m个整数，表示房间的照片。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">输出共n行，每行m个整数。<br />
+你需要依次输出lzz从第一行第一块砖开始走，他所遍历的地砖上的数字。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>3 4
+1 2 3 4
+5 6 7 8
+9 10 11 12</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>1 2 3 4
+8 12 11 10
+9 5 6 7</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content"></div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

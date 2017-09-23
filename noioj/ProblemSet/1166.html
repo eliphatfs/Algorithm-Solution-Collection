@@ -1,0 +1,66 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1166. 回家 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1166" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">Alice住在森林里，森林可以看作是N*M的网格，森林里有怪兽，用&lsquo;.&rsquo;表示空地，&lsquo;+&rsquo;表示怪兽，&lsquo;V&rsquo;表示Alice现在的位置，&lsquo;J&rsquo;表示Alice的家。<br />
+Alice可以从当前单元格向上下左右相邻单元格移动，有怪兽的地方也可以走，只不过比较危险，有怪兽的单元格对其他单元格会产生一定的危险系数，假设怪兽位置为(A,B)，它对某单元格(R,C)的危险系数为：|R-A|+|C-B|，危险系数越小越危险，每个单元格的危险系数是所有怪兽对它产生的系数的最小值。<br />
+Alice请你帮她找一条最佳路径回家，即使得路径上经过单元格的最小的危险系数最大。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">输入第一行包含两个整数N和M(1&lt;=N,M&lt;=500)，表示森林的大小。<br />
+接下来N行每行包含M个字符：&lsquo;.&rsquo;，&lsquo;+&rsquo;，&lsquo;V&rsquo;，&lsquo;J&rsquo;。<br />
+输入只包含一个&lsquo;V&rsquo;和&lsquo;J&rsquo;，而且至少有一个&lsquo;+&rsquo;。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">输出最佳路径中最小的危险系数。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'><span style="font-weight:bold;">输入1：</span>
+4 4
++...
+....
+....
+V..J
+<span style="font-weight:bold;">输入2：</span>
+4 5
+.....
+.+++.
+.+.+.
+V+.J+</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'><span style="font-weight:bold;">输出1：</span>
+3
+<span style="font-weight:bold;">输出2：</span>
+0</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">1&lt;=N,M&lt;=500</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

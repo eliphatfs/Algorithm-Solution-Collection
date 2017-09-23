@@ -1,0 +1,60 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1133. 黑白奶牛 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1133" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">有N 只奶牛从左往右排成一行，编号是1 至N。这N 只奶牛当中，有一些奶牛是黑色的，其余的是白色的。<br />
+color[i]表示第i 只奶牛的颜色，如果color[i]=0 则表示第i 头奶牛是黑色的，如果color[i]=1 则表示第i 头奶牛是白色的。<br />
+六一奶牛儿童节快到了，农场主Farmer John 要从这N 头奶牛当中，挑选尽可能多的奶牛去参加晚会。<br />
+Farmer John 挑选奶牛的原则是：挑选编号是连续的一段奶牛，这一段奶牛的颜色必须全部是白色的。<br />
+Farmer John 有一个魔法棒，每用一次魔法棒就可以把一头黑色的奶牛变成一头白色的奶牛，魔法棒最多只能使用K 次。<br />
+在上述条件下，最多可以有多少头奶牛去参加晚会呢？</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行，两个整数，N 和K。<br />
+第二行，N 个整数，第i 个整数就是color[i]，color[i]要么是0，要么是1。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">一个整数，表示最多有多少头奶牛可以去参加晚会。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>11 1
+1 1 0 0 1 1 1 1 0 1 1</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>7</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">对于50%的数据，1 &lt;= N &lt;= 1000，K = 0，即不能使用魔法棒。<br />
+对于100%的数据，1 &lt;= N &lt;= 100000， 1 &lt;= K &lt;=N。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+							<div class="well"><fieldset>
+					<legend><h4>提示</h4></legend>
+					<div class="content">由于K=1，所以最多可以使用1 次魔法棒，使用魔法棒把第9 头奶牛变成白色奶牛，然后挑选编号是5至11 的奶牛去参加晚会。</div>
+				</fieldset></div>
+			
+			<div style="text-align:center">
+									<p>

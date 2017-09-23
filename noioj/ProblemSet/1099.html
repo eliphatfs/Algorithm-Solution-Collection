@@ -1,0 +1,60 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1099. 朋友 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1099" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">肥肥上学好闷啊，好闷啊，于是他拿出一张纸开始写自己认识的同学。<br />
+每个同学有一个英文名，由小写英文字母组成。现在肥肥有m个奇奇怪怪的问题，每个问题有ki个名字，一条集合表达式，他想知道集合运算的结果是什么。<br />
+肥肥定义所有集合的元素都是小写英文字母，集合的输入、输出用字符串表示。例如：璋璋的名字集合A={a,c,d,f}，输入输出用字符串&ldquo;acdf&rdquo;表示。<br />
+集合运算有+、-、 *三种运算，+是每个元素&ldquo;或&rdquo;，*是每个元素&ldquo;并&rdquo;，-是每个元素&ldquo;并 反x&rdquo;（set[i] &amp;&amp; (!x.set[i]) ）<br />
+请你输出肥肥的n个问题答案。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第1行为m。<br />
+第2-m+1行，每行有一个整数ki，然后有ki个由小写英文字母组成的字符串，表示ki个同学的英文名。然后有ki-1个运算符号，分别为+，*，-，按照字符串给出对应的顺序计算。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">m行，每行一个字符串。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>3
+2 abef + cdefijk
+3 ab * cba - a
+4 zzz + xxx + yyy * xy</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>abcdefijk
+b
+xy</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">m&lt;=100,ki&lt;=100 英文名长度&lt;=10<br />
+注意：集合没有任何一个字符也要输出空行<br />
+按照字母从小到大输出</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

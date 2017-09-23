@@ -1,0 +1,83 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1091. 几何问题 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1091" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">小菊常常用计算机来解决几何问题，几乎所有的几何图形都可以在计算机中用数字来表示。<br />
+现在小菊需要记录下一些几何图形。<br />
+每个几何图形可能是三角形、圆形或者长方形。<br />
+如果是三角形，那么需要记录它的边长a。<br />
+如果是圆形，那么需要记录它的半径r。<br />
+如果是长方形，那么需要记录它的长a和宽b。<br />
+每记录一个图形就按顺序记录下它的编号，从1开始。<br />
+所有数据都是正整数。<br />
+&nbsp;<br />
+小菊有多次询问，每次输入一个编号，询问一个几何图形的特征。<br />
+如果是三角形，则输出Triangle a<br />
+如果是圆形，则输出Circle r<br />
+如果是长方形，则输出Rectangle a b<br />
+每个一行。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第1行：两个整数n和Q，表示图形个数和询问个数。(1&lt;=n,q&lt;=100)<br />
+第2~n+1行：每一行是以下三种之一：<br />
+T a<br />
+C r<br />
+R a b<br />
+其中第一个是字符T、C或R，表示三角形、圆形和长方形。<br />
+然后跟着1到2个数字，即该图形的特征。<br />
+&nbsp;<br />
+第n+2~n+Q+1行：每一行一个数字id，表示询问的编号。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">如题目所述，对于每一个询问输出一行。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>5 5
+T 3
+C 4
+R 7 8
+T 2
+C 5
+4
+3
+5
+1
+2</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>Triangle 2
+Rectangle 7 8
+Circle 5
+Triangle 3
+Circle 4</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content"></div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

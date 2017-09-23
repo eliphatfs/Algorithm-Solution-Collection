@@ -1,0 +1,62 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1152. 最大子矩阵 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1152" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">已知矩阵的大小定义为矩阵中所有元素的和。给定一个矩阵，你的任务是找到最大的非空(大小至少是1 * 1)子矩阵。<br />
+比如，如下4 * 4的矩阵<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 -2 -7 0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9 2 -6 2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -4 1 -4 1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1 8 0 -2<br />
+的最大子矩阵是<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9 2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -4 1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1 8<br />
+这个子矩阵的大小是15。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">输入是一个N * N的矩阵。输入的第一行给出N。再后面的若干行中，依次（首先从左到右给出第一行的N个整数，再从左到右给出第二行的N个整数&hellip;&hellip;）给出矩阵中的N2个整数，整数之间由空白字符分隔（空格或者空行）。已知矩阵中整数的范围都在[-127, 127]。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">输出最大子矩阵的大小。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>4
+0 -2 -7 0
+9 2 -6 2
+-4 1 -4 1
+-1 8 0 -2</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>15</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">0 &lt; N &lt;= 300</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

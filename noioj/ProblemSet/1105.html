@@ -1,0 +1,62 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1105. 插入排序 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1105" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">lzz今天学会了插入排序，他觉得插入排序很有趣。现在他有一个长为n的序列，而且这个序列中没有相同的数。现在他想对这个数列进行m次操作。每次操作他会选择一个序列中的元素x，然后他可以选择将x从序列中拿出来放到序列的尾部；或者将x取出来，然后把序列按顺序输出，再将x插入到原来的位置。但是他做了很久也没做出来，于是他请你来完成这个任务。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行输入一个整数n。<br />
+第二行按顺序输入n个整数，表示lzz的序列。<br />
+第三行输入一个整数m。<br />
+后面m行，每行两个整数a,b，若a=0，表示lzz将b取出来并放到序列的尾部；若a=1，表示lzz要将b取出来后输出，然后再将b放回原位。<br />
+(1&lt;=n,m&lt;=5000)</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">对于每一个a=1，输出一行。<br />
+每行n-1个整数，表示lzz取出了b之后的序列。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>10
+1 2 3 4 5 6 7 8 9 10
+5
+0 5
+1 10
+1 7
+0 9
+1 8</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>1 2 3 4 6 7 8 9 5
+1 2 3 4 6 8 9 10 5
+1 2 3 4 6 7 10 5 9</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">1&lt;=n,m&lt;=5000</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

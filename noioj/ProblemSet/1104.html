@@ -1,0 +1,72 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1104. 化学实验 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1104" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a>&nbsp;&nbsp;<span class="label label-important">Special Judge</span></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">现在放在桌子上有n(n&lt;=1000)杯溶液，编号为1到n，已知每一杯溶液的质量M[i]和体积V[i]。根据计划，我们要做实验，每次实验我们要取连续的几杯溶液，溶液倒出到一个烧杯里混合，问每次混合后混合液的密度。（我们可以简单地认为混合后的体积为原来所有溶液体积之和，而质量当然是守恒的），然后Lzz博士会补充溶液至原来的状态。<br />
+当然，我们的计划随时会改变，因为Lzz博士经常有新的想法，他会在当前第x杯溶液后加入一杯质量为m，体积为v的溶液；或者他会把第x杯溶液拿走。<br />
+对于每次做实验，请输出混合液的密度(四舍五入保留到三位小数)。<br />
+所有溶液初始的质量与体积均为正整数。<br />
+共有m次操作(m&lt;=1000)，操作有3种:<br />
+第一种操作E表示做实验，给出L，R。L和R表示需要溶液为当前的第L杯到第R杯。<br />
+第二种操作I表示加入一杯溶液，给出x,M,V，表示在当前第x杯溶液后加入一杯质量为M，体积为V的溶液，若x=0，则表示在最开头放。<br />
+第三种操作D表示拿走一杯溶液，给出x，表示拿走的溶液编号为x。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行一个整数n，表示初始溶液杯数。<br />
+接下来n行，每行两个整数，第i+1行的两个整数分别表示第i杯溶液的质量和体积，均为不大于1000的正整数。<br />
+接下来一行为一个整数m，表示操作次数。<br />
+接下来m行，每行先输入一个字符，表示操作类型，剩下的输入参考题面和样例。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">对于每个操作E，输出答案。<br />
+注：本题为特判题，要求答案精度误差不超过0.01。输入的L，R保证合法。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>5
+1 2
+1 3
+2 3
+2 4
+3 4
+5
+E 1 3
+I 2 2 5
+E 1 3
+D 1
+E 1 5</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>0.500
+0.400
+0.526</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">n&lt;=1000</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

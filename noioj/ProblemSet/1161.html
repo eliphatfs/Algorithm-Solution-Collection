@@ -1,0 +1,57 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1161. 渡河问题 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1161" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">Farmer John以及他的N(1 &lt;= N &lt;= 2,500)头奶牛打算过一条河，但他们所有的渡河工具，仅仅是一个木筏。<br />
+由于奶牛不会划船，在整个渡河过程中，FJ必须始终在木筏上。在这个基础上，木筏上的奶牛数目每增加1，FJ把木筏划到对岸就得花更多的时间。当FJ一个人坐在木筏上，他把木筏划到对岸需要M(1 &lt;= M &lt;= 1000)分钟。当木筏搭载的奶牛数目从i-1增加到i时，FJ得多花M_i(1 &lt;= M_i &lt;= 1000)分钟才能把木筏划过河（也就是说，船上有1头奶牛时，FJ得花M+M_1分钟渡河；船上有2头奶牛时，时间就变成M+M_1+M_2分钟。后面的依此类推）。<br />
+那么，FJ最少要花多少时间，才能把所有奶牛带到对岸呢？当然，这个时间得包括FJ一个人把木筏从对岸划回来接下一批的奶牛的时间。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第1行: 2个用空格隔开的整数：N 和 M<br />
+第2..N+1行: 第i+1为1个整数：M_i</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">第1行: 输出1个整数，为FJ把所有奶牛都载过河所需的最少时间</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>5 10
+3
+4
+6
+100
+1</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>50</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">输入说明:FJ带了5头奶牛出门。如果是单独把木筏划过河，FJ需要花10分钟，带上1头奶牛的话，是13分钟，2头奶牛是17分钟，3头是23分钟，4头是123分钟，将5头一次性载过去，花费的时间是124分钟。<br />
+输出说明:Farmer John第一次带3头奶牛过河（23分钟），然后一个人划回来（10分钟），最后带剩下的2头奶牛一起过河（17分钟），总共花费的时间是23+10+17 = 50分钟。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

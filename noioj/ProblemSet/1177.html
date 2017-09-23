@@ -1,0 +1,51 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1177. 骨牌覆盖 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1177" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">有2行n列的长方形方格，要求用n个1*2的骨牌铺满。有多少种铺法？<br />
+如n=3时有以下3种覆盖方法：<br />
+<br />
+<img src="data:image/png;base64,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" alt=" " /></div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第一行输入一个正整数n(1&lt;=n&lt;=50)</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">输出一个整数表示方案数。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>3</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>3</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">1&lt;=n&lt;=50</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

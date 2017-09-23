@@ -1,0 +1,67 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1092. 谜题 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1092" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">在藏宝室外，探险家詹&middot;邦发现了一道谜题，如果解开这道谜题就可以进入藏宝室内取走宝藏了。<br />
+在大门上有一行整数(|x|&lt;=100)，在它下面有一行字，与上面的整数一一对应，表示这个数字是由哪一个建造者写下的。再往下还有一些空位。<br />
+经过仔细研究，探险家发现了解开这个谜题的方法：<br />
+这座藏宝室是由3名建造者建的，他们3人共同设计了这道谜题。<br />
+他们的名字分别是Alice、Bob 和 Cathy。<br />
+下面的空位里可以放入一个特殊的机械装置，这个机械装置可以设定为表示一个特定的数字。<br />
+&nbsp;<br />
+每一个空位都是由一个建造者设计的，里面要求填的数字是：从第L到第R个整数中，由当前建造者写下的数字之和。（从1开始数。）<br />
+&nbsp;<br />
+现在请你帮助探险家詹&middot;邦找出每一个空位需要放入的机械装置要设定成多少。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">第1行:两个正整数n和Q(1&lt;=n,q&lt;=100)表示数字个数和空位个数。<br />
+第2行：n个数字，它们的绝对值不大于100。<br />
+第3行：n个字符串，只可能是Alice、Bob、Cathy中的一种。<br />
+第4~n+3行：每一行首先是一个字符串，表示建造者的名字，然后是两个正整数L,R，表示范围。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">每行一个数，表示每个空位要填的数字。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>7 3
+3 -1 8 5 -2 4 6
+Alice Alice Bob Cathy Bob Alice Cathy
+Alice 1 7
+Bob 2 3
+Cathy 2 5</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>6
+8
+5</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content"></div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

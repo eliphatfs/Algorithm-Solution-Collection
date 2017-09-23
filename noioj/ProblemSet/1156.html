@@ -1,0 +1,51 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1156. 最短线路 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1156" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">某城市的街道是一个很规整的矩形网格（见下图），有M条南北向的纵街，N 条东西向的横街。现要从西南角的A 走到东北角的B，最短的走法共有多少种?<br />
+<img src="data:image/png;base64,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jG+++SafhXxWSa3l1LZ0HFlxcPnstxyS7Nu3L4dVYolcX4XLpyVWgQAEIACBQhDAQIUYEyEhAAEIlCABDFSCQ6UlCEAAAoUggIEKMSZCQgACEChBAhioBIdKSxCAAAQKQQADFWJMhIQABCBQggQwUAkOlZYgAAEIFIIABirEmAgJAQhAoAQJYKASHCotQQACECgEAQxUiDEREgIQgEAJEsBAJThUWoIABCBQCAIYqBBjIiQEIACBEiSAgUpwqLQEAQhAoBAE+hjozTffnDlzZk1NzYwZM+Lbuffu3VuIHggJAQhAAAJFJNDHQAcOHNixY8emTZsqKiruueeel156qYgtkRkCEIAABApB4G9ehdu2bdszzzxz+PDhkND+/fsL0QYhIQABCECgcAT6G+j3339/5JFHdu7cGZ0sXrx48+bNhWuJwBCAAAQgUAgC/Q0U/zXesmXLjhw5Eum3bt369NNPnzhxohCdEBICEIAABIpFoL+BXn311bfeeut0D7/++uv8+fO7u7uL1RJpIQABCECgEAT6GChegps8eXJ8EK7p1PXEE09MnTr1vffeK0QnhIQABCAAgWIR6GOgTz/99M4773z88cdXnroaGxsXLVrU0NBQrJZICwEIQAAChSDQx0CrVq1qaWk5O/fRo0cfeOCBr7/+uhDNEBICEIAABApE4IyB4iW41tbW+CRCv/Tx50EbN24sUEtEhQAEIACBQhD400AhniVLllx33XX3339/e3v76eg9PT3xblBlZeXYsWNff/31UFQhWiIkBCAAAQgUgsCfBopvQ3juueeef/75tWvX7tq163T0eAlu/fr1zz77bPw8Po+AgQoxUUJCAAIQKAoBvpm0KJMiJwQgAIFSI4CBSm2i9AMBCECgKAQwUFEmRU4IQAACpUYAA5XaROkHAhCAQFEI/BulkyLSqZ0dMwAAAABJRU5ErkJggg==" alt=" " /></div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">一行,两个数M,N,其中 2&lt;M,N&lt;=800。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">输出最短路的走法总数。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>7 5</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>210</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">对于30%的数据, 2&lt;M,N&lt;=30;<br />
+对于60%的数据, 2&lt;M,N&lt;=100;<br />
+对于100%的数据, 2&lt;M,N&lt;=800。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			
+			<div style="text-align:center">
+									<p>

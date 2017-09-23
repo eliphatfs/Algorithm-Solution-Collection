@@ -1,0 +1,59 @@
+<div class="row-fluid">
+	<div id="header"><div style="text-align:center"><h2>1030. 角谷猜想 <sub>(Standard IO)</sub></h2><div>时间限制: <span class="badge badge-info">1000 ms</span> &nbsp;空间限制: <span class="badge badge-info">262144 KB</span> &nbsp;具体限制&nbsp; <a href="#main/limits/1030" style="text-align:left"><span id="trigger"><i class="icon-chevron-down"></i></span></a></div></div></div>
+</div>
+
+<div class="row-fluid" style="margin-top:7px">
+	<div id="mainbar" class="span10">
+		<div class="problem">
+			<div class="span12 well"><fieldset>
+				<legend><h4>题目描述</h4></legend>
+				<div class="content">角谷猜想又称冰雹猜想。它首先流传于美国，不久传到欧洲，后来由一位叫角谷的日本人带到亚洲。因为被称为角谷猜想。<br />
+通俗地讲，角谷猜想的内容是这样的：任意给定一个自然数n，当n是偶数时，将它除以2，即将它变成n/2；当n是奇数时，就将它变成3n+1，&hellip;&hellip;，若干步后，总会得到1。<br />
+在上述演变过程中，将每一次出现的数字排列起来，就会出现一个数字序列。<br />
+我们现在要解决的问题是：对于给定的n，求出数字序列中第一次出现1的位置。</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>输入</h4></legend>
+					<div class="content">输入一个自然数n。</div>
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>输出</h4></legend>
+					<div class="content">输出序列中第一次出现1的位置。</div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div>
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输入</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>6</pre></div> <!-- no br needed in pre -->
+				</fieldset></div>
+			
+				<div class="span6 well"><fieldset>
+					<legend><h4>样例输出</h4></legend>
+					<div class="content"><pre style='border:none;font-size:110%'>9</pre></div>
+				</fieldset></div>
+			</div>
+			<div class="clearfix"></div>
+		
+			<div class="well"><fieldset>
+				<legend><h4>数据范围限制</h4></legend>
+				<div class="content">1&lt;=n&lt;2^31</div>
+			</fieldset></div>
+			<div class="clearfix"></div>
+			
+							<div class="well"><fieldset>
+					<legend><h4>提示</h4></legend>
+					<div class="content">数字的变化过程如下：<br />
+6&rarr;6&divide;2&rarr;3&rarr;3&times;3+1&rarr;10&rarr;10&divide;2&rarr;5&rarr;5&times;3+1&rarr;16&rarr;16&divide;2&rarr;8&rarr;8&divide;2&rarr;4&rarr;4&divide;2&rarr;2&rarr;2&divide;2&rarr;1<br />
+所形成的数字序列为：<br />
+6 3 10 5 16 8 4 2 1<br />
+1位于数字数列的第9个位置。</div>
+				</fieldset></div>
+			
+			<div style="text-align:center">
+									<p>
