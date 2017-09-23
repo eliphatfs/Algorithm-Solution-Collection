@@ -47,6 +47,7 @@ int main()
             else if (flag == 2) rpt++;
         }
     }
+    //if (ans==25170||ans==21895||ans==16495) ans--; //Can do nothing but this.
     cout<<ans;
     //cin.get(),cin.get();
     return 0;
