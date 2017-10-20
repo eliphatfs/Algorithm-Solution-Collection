@@ -1,0 +1,14 @@
+lowbit(i) = i & (-i)
+
+sum(a[1..i]):
+sum = 0
+while (i > 0)
+	sum += c[i]
+	i -= lowbit(i)
+
+
+change(x, ax):
+i = x
+while (i < max)
+	c[i] += ax
+	i += lowbit(i)
