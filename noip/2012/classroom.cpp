@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstdio>
-#include <time.h>
 
 using namespace std;
 long long r[1000001];
@@ -50,7 +49,6 @@ int sch(int l, int r)
 }
 int main()
 {
-    int bg = clock();
     freopen("classroom20.in", "r", stdin);
     freopen("classroom.txt", "w", stdout);
     scanf("%d%d", &n, &m);
@@ -66,7 +64,5 @@ int main()
         cout<<0;
     else
         cout<<-1<<endl<<sch(1, n);
-    int end = clock();
-    cout<<endl<<(end-bg);
     return 0;
 }
