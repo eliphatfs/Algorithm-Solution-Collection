@@ -33,6 +33,28 @@ void merge_sort(T * array, int low, int high) { // [low, high)
 
 template<typename T>
 class array_list {
-    int size;
-    
+    int _size;
+    int _capacity;
+    T * data;
+protected:
+    void extend_to(int capacity) {
+        T * ndata = new T[capacity];
+        for (int i = 0; i < _capacity; i++) ndata[i] = data[i];
+        delete[] data;
+        _capacity = capacity;
+        data = ndata;
+    }
+public:
+    array_list() {
+        _capacity = 16; _size = 0;
+        data = new T[_capacity];
+    }
+    int size() const { return _size; }
+    T& operator[](int index) { return data[index]; }
+    void append(T elm) {
+        if (_size == _capacity) extend_to(_capacity * 2);
+        data[_size++] = elm;
+    }
+    T pop() { return data[--_size]; }
+    ~array_list() { delete[] data; }
 };
