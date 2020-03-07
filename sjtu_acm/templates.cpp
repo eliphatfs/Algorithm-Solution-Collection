@@ -112,29 +112,31 @@ public:
     }
 };
 
+template<typename E>
 struct edge {
     int from;
     int to;
     int weight;
+    E data;
 };
 
-template<typename T>
+template<typename V, typename E>
 class graph {
 public:
-    T * node_data;
-    array_list<edge> * edge_from;
+    V * node_data;
+    array_list<edge<E> > * edge_from;
     graph(int n_nodes) {
-        node_data = new T[n_nodes];
-        edge_from = new array_list<edge>[n_nodes]();
+        node_data = new V[n_nodes];
+        edge_from = new array_list<edge<E> >[n_nodes]();
     }
-    void create_edge(const edge& e) {
+    void create_edge(const edge<E>& e) {
         edge_from[e.from].append(e);
     }
-    void create_edge(int from, int to, int weight) {
-        edge e; e.from = from; e.to = to; e.weight = weight;
+    void create_edge(int from, int to, int weight, const E& data) {
+        edge<E> e; e.from = from; e.to = to; e.weight = weight; e.data = data;
         create_edge(e);
     }
-    edge remove_edge(int from, int to) {
+    edge<E> remove_edge(int from, int to) {
         for (int i = 0; i < edge_from[from].size(); i++) {
             if (edge_from[from][i].to == to) {
                 do_swap(edge_from[from][i], edge_from[from][edge_from[from].size() - 1]);
