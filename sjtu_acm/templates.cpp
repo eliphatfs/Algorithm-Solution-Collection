@@ -136,6 +136,16 @@ public:
         edge<E> e; e.from = from; e.to = to; e.weight = weight; e.data = data;
         create_edge(e);
     }
+    edge<E> query_edge(int from, int to) {
+        for (int i = 0; i < edge_from[from].size(); i++)
+            if (edge_from[from][i].to == to)
+                return edge_from[from][i];
+    }
+    edge<E> query_edge(int from, const E& data) {
+        for (int i = 0; i < edge_from[from].size(); i++)
+            if (edge_from[from][i].data == data)
+                return edge_from[from][i];
+    }
     edge<E> remove_edge(int from, int to) {
         for (int i = 0; i < edge_from[from].size(); i++) {
             if (edge_from[from][i].to == to) {
