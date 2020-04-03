@@ -92,6 +92,7 @@ public:
     array_deque(const array_deque<T>& copy): array_list<T>(copy) {
         head = copy.head; tail = copy.tail;
     }
+    virtual T& operator[](int index) { return data[(head + index) % _size]; }
     void push_back(const T& elm) {
         if (head == next_index(tail)) extend_and_realloc();
         data[tail] = elm;
@@ -161,11 +162,15 @@ using namespace std;
 int test_deque() {
     array_deque<int> t;
     for (int i = 0; i < 50; i++) t.push_back(i);
+    for (int i = 0; i < 50; i++) cout << t[i] << ' ';
+    cout << endl;
     cout << t.pop_back() << ' ';
     cout << t.pop_back() << ' ';
     cout << t.pop_front() << ' ';
     cout << t.pop_front() << endl;
     for (int i = 0; i < 50; i++) t.push_front(i);
+    for (int i = 0; i < 96; i++) cout << t[i] << ' ';
+    cout << endl;
     cout << t.pop_front() << ' ';
     cout << t.pop_front() << ' ';
     cout << t.pop_back() << ' ';
