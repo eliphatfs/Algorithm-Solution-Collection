@@ -111,6 +111,8 @@ public:
         head = next_index(head);
         return ret;
     }
+    T front() { return data[head]; }
+    T back() { return data[prev_index(tail)]; }
 };
 
 template<typename E>
